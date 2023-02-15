@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Roblox IP Grabber</title>
+        <link rel="stylesheet" href="text.css">
+        <link rel="stylesheet" href="image.css">
+        <link rel="stylesheet" href="title.css">
+        <link rel="icon" href="C:\Users\matis\Downloads\Website\images\RobloxLogo.png">
+    </head>
+    <title>Roblox IP Grabber</title> 
+    </head>      
+    <body>
+        <div class="title">
+            <h1>Roblox IP Grabber</h1>
+        </div>
+        <div class="text" id="IP">
+            <h1>Waiting...</h1>
+        </div>
+        <script>
+            var NewXMLHttpRequest = new XMLHttpRequest();
+
+            NewXMLHttpRequest.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("IP").textContent = this.responseText;
+                }
+            };
+
+            NewXMLHttpRequest.open("GET", "https://api.ipify.org/", true);
+            NewXMLHttpRequest.send();
+        </script>
+        <img src="C:\Users\matis\Downloads\Website\images\RobloxLogo.png" alt="Icon" class="image">
+    </body>
+    <body>
+    </body>
+</html>
