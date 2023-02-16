@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="image.css">
         <link rel="stylesheet" href="title.css">
         <link rel="icon" href="images/RobloxLogo.png">
+        <script src="ip.js"></script>
     </head>
     <title>Roblox IP Grabber</title> 
     </head>      
@@ -17,19 +18,7 @@
         <div class="text" id="IP">
             <h1></h1>
         </div>
-        <script>
-            var NewXMLHttpRequest = new XMLHttpRequest();
-
-            NewXMLHttpRequest.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("IP").textContent = this.responseText;
-                }
-            };
-
-            NewXMLHttpRequest.open("GET", "https://api.ipify.org/", true);
-            NewXMLHttpRequest.send();
-        </script>
-        <script src="ip.js"></script>
+        <script>SendRequest()</script>
         <img src="images/RobloxLogo.png" alt="Icon" class="image">
     </body>
     <body>
