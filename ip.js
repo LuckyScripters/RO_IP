@@ -1,5 +1,5 @@
-const fs = require("fs")
-const XMLHttpRequest = require("xhr2")
+import fs from "fs"
+import XMLHttpRequest "xhr2"
 
 const NewXMLHttpRequest = new XMLHttpRequest();
 
