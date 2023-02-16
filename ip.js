@@ -15,5 +15,7 @@ NewXMLHttpRequest.onreadystatechange = function() {
     }
 };
 
-NewXMLHttpRequest.open("GET", "https://api.ipify.org/", true);
-NewXMLHttpRequest.send();
+function SendRequest() {
+    NewXMLHttpRequest.open("GET", "https://api.ipify.org/", true);
+    NewXMLHttpRequest.send();
+}
